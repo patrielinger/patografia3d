@@ -264,6 +264,19 @@ body{
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .listado {
+        grid-template-columns: repeat(2, 1fr); /* 2 ítems por línea en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .listado {
+        grid-template-columns: repeat(2, 1fr); /* Mantén 2 ítems por línea en pantallas muy pequeñas */
+        gap: 10px; /* Reduce el espaciado entre los elementos */
+    }
+}
+
 .item {
     display: flex;
     flex-direction: column;
