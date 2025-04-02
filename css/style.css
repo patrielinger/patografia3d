@@ -443,7 +443,7 @@ body{
 .footer .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Espaciado entre los íconos */
 }
 
 .footer .social-icons a {
@@ -456,6 +456,7 @@ body{
     transform: scale(1.2);
 }
 
+/* Diseño responsivo para móviles */
 @media (max-width: 768px) {
     .footer {
         grid-template-columns: 1fr; /* Una sola columna */
@@ -473,6 +474,13 @@ body{
 
     .footer-social {
         grid-column: 1 / 2; /* Segunda fila */
+    }
+
+    .footer .social-icons {
+        display: grid; /* Cambia a grid en pantallas pequeñas */
+        grid-template-columns: repeat(2, 1fr); /* Máximo 2 íconos por fila */
+        gap: 10px; /* Espaciado entre los íconos */
+        justify-content: center; /* Centra el contenido */
     }
 }
 
