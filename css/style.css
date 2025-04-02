@@ -2,6 +2,7 @@
     font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  text-decoration: none !important;
 }
 body{
     background-color: #E8E8E8 !important;
@@ -473,4 +474,131 @@ body{
     .footer-social {
         grid-column: 1 / 2; /* Segunda fila */
     }
+}
+
+.ig{
+    filter: invert(1);
+}
+.fc{
+    filter: invert(1);
+}
+.wp{
+    filter: invert(1);
+}
+.tf{
+    filter: invert(1);
+}
+.base {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas: una para el texto y otra para la imagen */
+    gap: 20px;
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%;
+    padding: 20px;
+}
+
+.imgg {
+    width: 100%; /* Asegura que el contenedor de la imagen ocupe todo el espacio disponible */
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.imgg img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    max-width: 400px; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente al contenedor */
+}
+
+.texttt {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+}
+
+.texttt h1 {
+    color: #000;
+    font-size: 2rem; 
+    font-weight: 700; 
+    margin-bottom: 10px; 
+}
+
+.texttt p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .base {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-rows: auto auto; /* Imagen arriba, texto abajo */
+        text-align: center; /* Centra el texto */
+    }
+
+    .imgg img {
+        max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Espaciado entre la imagen y el texto */
+    }
+
+    .texttt {
+        align-items: center; /* Centra el texto horizontalmente */
+    }
+
+    .texttt h1, .texttt p {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+.links{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: auto;                           
+}
+.wap1{
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #06A77D;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.wap1 img{
+    filter: invert(1);
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+.wap1:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+.tel1{
+    color: #fff;
+    border-radius: 20px;
+    background-color: #0651a7ff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.tel1 img{
+    filter: invert(1);
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+.tel1:hover{
+    color: #fff;
+    transition: 0.3s;
 }
