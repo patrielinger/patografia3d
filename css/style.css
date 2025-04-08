@@ -1,5 +1,5 @@
 *{
-    font-family: "Montserrat", serif;
+    font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-decoration: none !important;
@@ -218,7 +218,6 @@ body{
 
 .offcanvas-title{
     color: #fff;
-    font-weight: 400;
 }
 .img-container {
     position: relative;
@@ -339,6 +338,7 @@ body{
 
 .info h4 {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .info .contact-links {
@@ -397,8 +397,8 @@ body{
 }
 
 .navbar-brand img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     object-fit: contain; /* Ajusta la imagen dentro de su contenedor */
     margin-right: 0; /* Elimina cualquier margen adicional */
 }
@@ -611,18 +611,4 @@ body{
 .tel1:hover{
     color: #fff;
     transition: 0.3s;
-}
-.precios{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.precios p{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 0.9rem;
-    width: 50%;
 }

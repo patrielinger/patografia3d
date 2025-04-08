@@ -27,16 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const textos = [
-        "Bienvenido a Magna Importaciones",
-        "Tu tienda de confianza",
-        "Ofrecemos productos de calidad",
-        "Envíos rápidos y seguros",
-        "Atención al cliente excepcional",
-        "Compra fácil y rápido",
-        "Tu satisfacción es nuestra prioridad",
-        "Productos seleccionados para ti",
-        "Calidad y precio en un solo lugar",
-        "Tu tienda online de confianza",
+        "Bienvenido a Patografía 3D",
+        "Soluciones rápidas y efectivas",
+        "Trabajos personalizados",
+        "Desde San Salvador de Jujuy",
+        "Diseños únicos para cada cliente",
+        "Contáctanos para tu idea"
     ];
 
     let index = 0;
