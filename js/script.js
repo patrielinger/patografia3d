@@ -25,4 +25,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateCarousel(); // Initialize the carousel
     });
+
+    const textos = [
+        "Bienvenido a Patografía 3D",
+        "Soluciones rápidas y efectivas",
+        "Trabajos personalizados",
+        "Desde San Salvador de Jujuy",
+        "Diseños únicos para cada cliente",
+        "Contáctanos para tu idea"
+    ];
+
+    let index = 0;
+    const textElement = document.getElementById("text");
+
+    function cambiarTexto() {
+        // Cambiar el texto
+        textElement.textContent = textos[index];
+
+        // Incrementar el índice y reiniciarlo si llega al final
+        index = (index + 1) % textos.length;
+    }
+
+    // Cambiar el texto cada 3 segundos (sincronizado con la animación CSS)
+    cambiarTexto(); // Mostrar el primer texto inmediatamente
+    setInterval(cambiarTexto, 3000);
 });
