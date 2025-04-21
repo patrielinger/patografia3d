@@ -1,30 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const imgContainers = document.querySelectorAll('.img-container');
-
-    imgContainers.forEach((imgContainer) => {
-        const images = imgContainer.querySelectorAll('.carousel-image');
-        const leftArrow = imgContainer.querySelector('.left-arrow');
-        const rightArrow = imgContainer.querySelector('.right-arrow');
-        let currentIndex = 0;
-
-        const updateCarousel = () => {
-            images.forEach((img, index) => {
-                img.classList.toggle('active', index === currentIndex);
-            });
-        };
-
-        leftArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateCarousel();
+    const carousels = document.querySelectorAll('.item');
+  
+    carousels.forEach(item => {
+      const images = item.querySelectorAll('.carousel-image');
+      const leftArrow = item.querySelector('.left-arrow');
+      const rightArrow = item.querySelector('.right-arrow');
+  
+      if (!images.length || !leftArrow || !rightArrow) return;
+  
+      let currentIndex = 0;
+  
+      const updateCarousel = () => {
+        images.forEach((img, index) => {
+          img.classList.toggle('active', index === currentIndex);
         });
-
-        rightArrow.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateCarousel();
-        });
-
-        updateCarousel(); // Initialize the carousel
+      };
+  
+      leftArrow.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+      });
+  
+      rightArrow.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+      });
     });
+  
 
     const textos = [
         "Bienvenido a Patografía 3D",
